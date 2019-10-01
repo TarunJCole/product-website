@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `AndroPhone`,
+    title: `Androphone`,
     description: `The latest and only phone you will ever need.`,
     author: `Tarun Cole`,
   },
@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `AndroPhone`,
+        name: `Androphone`,
         short_name: `Phone`,
         start_url: `/`,
         background_color: `#663399`,

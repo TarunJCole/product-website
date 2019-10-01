@@ -1,6 +1,29 @@
+/* GLOBAL CSS IN HERE */
+@import url("https://fonts.googleapis.com/css?family=Nunito|Open+Sans&display=swap");
+
 /* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* vars */
+html {
+  --light-color: #f4f4f4;
+  --medium-light-color: #eee;
+  --dark-color: #333;
+  --primary-color: rgb(90, 158, 226);
+  --primary-color-dark: rgb(51, 96, 141);
+  --primary-color-light: rgb(126, 191, 255);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
 }

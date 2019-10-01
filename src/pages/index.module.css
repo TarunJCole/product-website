@@ -1,0 +1,40 @@
+.index {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+  background: url(../images/bgimage.jpg) no-repeat center center / cover;
+}
+
+.index h1 {
+  font-size: 3.5rem;
+}
+
+.index p {
+  font-size: 1.2rem;
+}
+
+.index button {
+  min-width: 12%;
+  max-width: 20%;
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  background: var(--primary-color);
+  border-radius: 40px;
+  transition: background 0.3s ease-in-out;
+  outline: none;
+}
+
+.index button:hover {
+  background: var(--primary-color-light);
+}
+
+.index img {
+  max-width: 600px;
+  justify-self: flex-end;
+}

@@ -1,0 +1,21 @@
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 5rem;
+  background: var(--medium-light-color);
+  position: fixed;
+  width: 100vw;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+  padding: 0 1rem;
+}

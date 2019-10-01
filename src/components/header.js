@@ -2,9 +2,22 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import headerStyles from "./header.module.css"
+
 const Header = ({ siteTitle }) => (
-  <header>
-    <h1>Header {siteTitle}</h1>
+  <header style={headerStyles}>
+    <nav>
+      <div>
+        <h2>{siteTitle}</h2>
+      </div>
+      <div>
+        <ul>
+          <li>item</li>
+          <li>item</li>
+          <li>item</li>
+        </ul>
+      </div>
+    </nav>
   </header>
 )
 
