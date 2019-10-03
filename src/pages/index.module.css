@@ -37,3 +37,18 @@
 .imageContainer {
   width: 450px;
 }
+
+.icon {
+  color: #aaa;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+  margin: 0.25rem;
+}
+
+.icon:first-child {
+  margin-left: 0;
+}
+
+.icon:hover {
+  color: var(--dark-color);
+}

@@ -1,5 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import { IconContext } from "react-icons"
+import { FaFacebookSquare, FaTwitterSquare } from "react-icons/fa"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
@@ -30,9 +32,24 @@ const IndexPage = () => {
             The latest and only android phone you will ever need.
           </p>
           <button>See Features</button>
+          <div>
+            <IconContext.Provider value={{ size: "2rem" }}>
+              <a href="https://www.facebook.com" className={indexStyles.icon}>
+                <FaFacebookSquare />
+              </a>
+            </IconContext.Provider>
+            <IconContext.Provider value={{ size: "2rem" }}>
+              <a href="https://www.twitter.com" className={indexStyles.icon}>
+                <FaTwitterSquare />
+              </a>
+            </IconContext.Provider>
+          </div>
         </div>
         <div className={indexStyles.imageContainer}>
-          <Img fluid={data.phoneImage.childImageSharp.fluid} />
+          <Img
+            fluid={data.phoneImage.childImageSharp.fluid}
+            alt="Smartphone front"
+          />
         </div>
       </div>
     </Layout>
