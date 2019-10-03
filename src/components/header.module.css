@@ -16,6 +16,10 @@ header nav div {
   align-items: center;
 }
 
+header nav h2 {
+  font-size: 1.7rem;
+}
+
 header nav ul {
   display: flex;
   list-style: none;
