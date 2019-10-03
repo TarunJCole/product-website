@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Androphone`,
-    description: `The latest and only phone you will ever need.`,
+    description: `The only android phone you will ever need.`,
     author: `Tarun Cole`,
   },
   plugins: [

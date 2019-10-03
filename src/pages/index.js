@@ -28,9 +28,7 @@ const IndexPage = () => {
       <div className={indexStyles.index}>
         <div className="title">
           <h1>Meet Androphone</h1>
-          <p className="lead">
-            The latest and only android phone you will ever need.
-          </p>
+          <p className="lead">The only android phone you will ever need.</p>
           <button>See Features</button>
           <div>
             <IconContext.Provider value={{ size: "2rem" }}>
