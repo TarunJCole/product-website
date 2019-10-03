@@ -7,12 +7,14 @@ import headerStyles from "./header.module.css"
 const Header = ({ siteTitle }) => (
   <header style={headerStyles}>
     <nav>
+      <ul>
+        <li>Contact</li>
+      </ul>
       <div>
         <h2>{siteTitle}</h2>
       </div>
       <div>
         <ul>
-          <li>item</li>
           <li>item</li>
           <li>item</li>
         </ul>

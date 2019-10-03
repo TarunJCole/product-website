@@ -1,21 +1,39 @@
 header nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 5rem;
-  background: var(--medium-light-color);
+  justify-content: space-evenly;
+  padding: 0 5rem;
+  height: 8vh;
+  background: var(--dark-color);
+  color: var(--light-color);
   position: fixed;
   width: 100vw;
 }
 
-header nav ul {
-  list-style: none;
+header nav div {
   display: flex;
+  height: 100%;
   align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
   justify-content: space-evenly;
+  height: 100%;
 }
 
 header nav ul li {
-  margin: 0 1rem;
-  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 4px solid transparent;
+  padding: 0 2rem;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+header nav ul li:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
