@@ -1,19 +1,23 @@
 header nav {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 0 5rem;
   height: 8vh;
   background: var(--dark-color);
   color: var(--light-color);
   position: fixed;
   width: 100vw;
+  font-weight: bold;
 }
 
 header nav div {
   display: flex;
   height: 100%;
   align-items: center;
+  justify-content: center;
+  width: 33%;
+  text-align: center;
 }
 
 header nav h2 {
@@ -23,7 +27,7 @@ header nav h2 {
 header nav ul {
   display: flex;
   list-style: none;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 100%;
 }
 
