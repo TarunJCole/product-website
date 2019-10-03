@@ -1,10 +1,11 @@
 .index {
   min-width: 100vw;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 10%;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
   background: url(../images/bgimage.jpg) no-repeat center center / cover;
 }
 
@@ -17,11 +18,10 @@
 }
 
 .index button {
-  min-width: 12%;
-  max-width: 20%;
+  min-width: 15%;
   margin: 1.5rem 0;
-  padding: 1rem 1.5rem;
-  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
   background: var(--primary-color);
@@ -34,7 +34,6 @@
   background: var(--primary-color-light);
 }
 
-.index img {
-  max-width: 600px;
-  justify-self: flex-end;
+.imageContainer {
+  width: 450px;
 }

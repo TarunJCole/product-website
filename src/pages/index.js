@@ -10,7 +10,7 @@ import indexStyles from "./index.module.css"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      phoneImage: file(relativePath: { eq: "phone.jpg" }) {
+      phoneImage: file(relativePath: { eq: "phone.png" }) {
         childImageSharp {
           fluid(maxWidth: 600) {
             ...GatsbyImageSharpFluid
@@ -30,6 +30,9 @@ const IndexPage = () => {
             The latest and only android phone you will ever need.
           </p>
           <button>See Features</button>
+        </div>
+        <div className={indexStyles.imageContainer}>
+          <Img fluid={data.phoneImage.childImageSharp.fluid} />
         </div>
       </div>
     </Layout>
