@@ -39,7 +39,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div className={indexStyles.index}>
+      <section className={indexStyles.index}>
         <div className="title">
           <h1>Meet Androphone</h1>
           <p className="lead">The only smartphone you will ever need.</p>
@@ -63,8 +63,8 @@ const IndexPage = () => {
             alt="Smartphone front"
           />
         </div>
-      </div>
-      <div className={indexStyles.features}>
+      </section>
+      <section className={indexStyles.features}>
         <div className={indexStyles.featuresImgContainer}>
           <Img
             fluid={data.featuresImage.childImageSharp.fluid}
@@ -85,8 +85,8 @@ const IndexPage = () => {
             </ul>
           </div>
         </div>
-      </div>
-      <div className={indexStyles.editions}>
+      </section>
+      <section className={indexStyles.editions}>
         <div className={indexStyles.editionsText}>
           <div>
             <h2>Three Editions, For Everyone.</h2>
@@ -104,7 +104,7 @@ const IndexPage = () => {
             alt="Three Smartphones"
           />
         </div>
-      </div>
+      </section>
     </Layout>
   )
 }
