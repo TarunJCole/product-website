@@ -1,3 +1,4 @@
+/* index / landing */
 .index {
   min-width: 100vw;
   min-height: 100vh;
@@ -10,7 +11,7 @@
 }
 
 .index h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 .index p {
@@ -34,10 +35,12 @@
   background: var(--primary-color-light);
 }
 
+/* Image container */
 .imageContainer {
-  width: 450px;
+  width: 300px;
 }
 
+/* icons */
 .icon {
   color: #aaa;
   transition: color 0.3s ease-in-out;
@@ -51,4 +54,32 @@
 
 .icon:hover {
   color: var(--dark-color);
+}
+
+/* features */
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.features div {
+  padding: 2rem;
+}
+
+.featuresText h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.featuresText ul li {
+  margin: 1rem;
+}
+
+.featuresImgContainer {
+  width: 600px;
+  margin: 0 auto;
 }

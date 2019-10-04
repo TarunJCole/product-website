@@ -19,6 +19,13 @@ const IndexPage = () => {
           }
         }
       }
+      featuresImage: file(relativePath: { eq: "phoneFrontBack.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -28,7 +35,7 @@ const IndexPage = () => {
       <div className={indexStyles.index}>
         <div className="title">
           <h1>Meet Androphone</h1>
-          <p className="lead">The only android phone you will ever need.</p>
+          <p className="lead">The only smartphone you will ever need.</p>
           <button>See Features</button>
           <div>
             <IconContext.Provider value={{ size: "2rem" }}>
@@ -48,6 +55,26 @@ const IndexPage = () => {
             fluid={data.phoneImage.childImageSharp.fluid}
             alt="Smartphone front"
           />
+        </div>
+      </div>
+      <div className={indexStyles.features}>
+        <div className={indexStyles.featuresImgContainer}>
+          <Img
+            fluid={data.featuresImage.childImageSharp.fluid}
+            alt="Smartphone front and back"
+          />
+        </div>
+        <div className={indexStyles.featuresText}>
+          <h2>Fully Featured Android Smartphone</h2>
+          <ul>
+            <li>15/30/60 GB Storage</li>
+            <li>2/4 GB Memory</li>
+            <li>Latest Android OS</li>
+            <li>16 Megapixel Camera</li>
+            <li>2.5mm Headphone Jack</li>
+            <li>2.5GHz Processor</li>
+            <li>7-inch Display</li>
+          </ul>
         </div>
       </div>
     </Layout>

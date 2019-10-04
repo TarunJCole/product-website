@@ -9,6 +9,7 @@ header nav {
   position: fixed;
   width: 100vw;
   font-weight: bold;
+  z-index: 2;
 }
 
 header nav div {
