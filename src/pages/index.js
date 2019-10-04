@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { IconContext } from "react-icons"
 import { FaFacebookSquare, FaTwitterSquare } from "react-icons/fa"
+import { Link as ScrollLink } from "react-scroll"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
@@ -43,7 +44,9 @@ const IndexPage = () => {
         <div className="title">
           <h1>Meet Androphone</h1>
           <p className="lead">The only smartphone you will ever need.</p>
-          <button>See Features</button>
+          <ScrollLink to="features" smooth={true}>
+            <button>See Features</button>
+          </ScrollLink>
           <div>
             <IconContext.Provider value={{ size: "2rem" }}>
               <a href="https://www.facebook.com" className={indexStyles.icon}>
@@ -64,7 +67,7 @@ const IndexPage = () => {
           />
         </div>
       </section>
-      <section className={indexStyles.features}>
+      <section className={indexStyles.features} id="features">
         <div className={indexStyles.featuresImgContainer}>
           <Img
             fluid={data.featuresImage.childImageSharp.fluid}
