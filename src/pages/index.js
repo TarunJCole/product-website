@@ -26,6 +26,13 @@ const IndexPage = () => {
           }
         }
       }
+      editionsImage: file(relativePath: { eq: "threePhones.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -65,16 +72,37 @@ const IndexPage = () => {
           />
         </div>
         <div className={indexStyles.featuresText}>
-          <h2>Fully Featured Android Smartphone</h2>
-          <ul>
-            <li>15/30/60 GB Storage</li>
-            <li>2/4 GB Memory</li>
-            <li>Latest Android OS</li>
-            <li>16 Megapixel Camera</li>
-            <li>2.5mm Headphone Jack</li>
-            <li>2.5GHz Processor</li>
-            <li>7-inch Display</li>
-          </ul>
+          <div>
+            <h2>Fully Featured Android Smartphone.</h2>
+            <ul>
+              <li>15/30/60 GB Storage</li>
+              <li>2/4 GB Memory</li>
+              <li>Latest Android OS</li>
+              <li>16 Megapixel Camera</li>
+              <li>2.5mm Headphone Jack</li>
+              <li>2.5GHz Processor</li>
+              <li>7-inch Display</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className={indexStyles.editions}>
+        <div className={indexStyles.editionsText}>
+          <div>
+            <h2>Three Editions, For Everyone.</h2>
+            <ul>
+              <li>Standard Edition</li>
+              <li>Pro Edition</li>
+              <li>Ultimate Edition</li>
+            </ul>
+            <button>See Pricing</button>
+          </div>
+        </div>
+        <div className={indexStyles.editionsImgContainer}>
+          <Img
+            fluid={data.editionsImage.childImageSharp.fluid}
+            alt="Three Smartphones"
+          />
         </div>
       </div>
     </Layout>
