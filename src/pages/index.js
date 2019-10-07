@@ -98,7 +98,9 @@ const IndexPage = () => {
               <li>Pro Edition</li>
               <li>Ultimate Edition</li>
             </ul>
-            <button>See Pricing</button>
+            <Link to="/products/">
+              <button>See Pricing</button>
+            </Link>
           </div>
         </div>
         <div className={indexStyles.editionsImgContainer}>
