@@ -69,7 +69,7 @@ export default function Products() {
           </div>
         </div>
         <div className={productStyles.card}>
-          <h2>Pro Edition</h2>
+          <h2 style={{ background: "#90f099" }}>Pro Edition</h2>
           <h3>£ 299</h3>
           <hr />
           <ul>
@@ -124,7 +124,7 @@ export default function Products() {
           </div>
         </div>
         <div className={productStyles.card}>
-          <h2>Ultimate Edition</h2>
+          <h2 style={{ background: "#edd374" }}>Ultimate Edition</h2>
           <h3>£ 499</h3>
           <hr />
           <ul>
