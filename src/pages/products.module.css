@@ -1,0 +1,64 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-color);
+}
+
+.card {
+  margin: 4rem auto 0rem auto;
+  max-width: 450px;
+  background: var(--light-color);
+  border-radius: 10px;
+}
+
+.card hr {
+  margin: 0 4rem;
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 1rem;
+  background: var(--primary-color-light);
+  border-radius: 10px 10px 0 0;
+}
+
+.card h3 {
+  padding: 2rem 4rem;
+  font-size: 1.5rem;
+}
+
+.card ul {
+  list-style: none;
+  padding: 1rem 4rem;
+}
+
+.card ul li {
+  margin: 1rem 0;
+}
+
+.card div {
+  margin: 2rem;
+  text-align: center;
+}
+
+.card div a {
+  padding: 1rem 3rem;
+  background: var(--primary-color-light);
+  border-radius: 50px;
+  margin: 0 auto;
+  color: var(--dark-color);
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.card div a:hover {
+  background: var(--primary-color);
+}
