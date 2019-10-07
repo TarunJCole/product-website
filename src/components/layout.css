@@ -1,5 +1,5 @@
 /* GLOBAL CSS IN HERE */
-@import url("https://fonts.googleapis.com/css?family=Nunito|Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Karla|Open+Sans&display=swap");
 
 /* Reset */
 * {
@@ -25,5 +25,5 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Karla", sans-serif;
 }
