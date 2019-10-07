@@ -11,29 +11,42 @@ const Header = ({ siteTitle }) => (
     <nav>
       <div>
         <ul>
-          <li>Products</li>
-          <li>Contact</li>
+          <Link to="/">
+            <li>Home</li>
+          </Link>
+          <Link to="/products/">
+            <li>Products</li>
+          </Link>
+          <Link to="/contact/">
+            <li>Contact</li>
+          </Link>
         </ul>
       </div>
       <div>
-        <h2>{siteTitle}</h2>
+        <Link to="/">
+          <h2>{siteTitle}</h2>
+        </Link>
       </div>
       <div>
         <ul>
-          <li>
-            <IconContext.Provider
-              value={{ size: "2rem", style: { marginRight: "0.4rem" } }}
-            >
-              <FaFacebookSquare /> <span>Facebook</span>
-            </IconContext.Provider>
-          </li>
-          <li>
-            <IconContext.Provider
-              value={{ size: "2rem", style: { marginRight: "0.4rem" } }}
-            >
-              <FaTwitterSquare /> <span>Twitter</span>
-            </IconContext.Provider>
-          </li>
+          <a href="https://www.facebook.com">
+            <li>
+              <IconContext.Provider
+                value={{ size: "2rem", style: { marginRight: "0.4rem" } }}
+              >
+                <FaFacebookSquare /> <span>Facebook</span>
+              </IconContext.Provider>
+            </li>
+          </a>
+          <a href="https://www.twitter.com">
+            <li>
+              <IconContext.Provider
+                value={{ size: "2rem", style: { marginRight: "0.4rem" } }}
+              >
+                <FaTwitterSquare /> <span>Twitter</span>
+              </IconContext.Provider>
+            </li>
+          </a>
         </ul>
       </div>
     </nav>

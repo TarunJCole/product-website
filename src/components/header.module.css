@@ -23,6 +23,7 @@ header nav div {
 
 header nav h2 {
   font-size: 1.7rem;
+  color: var(--light-color);
 }
 
 header nav ul {
@@ -30,6 +31,10 @@ header nav ul {
   list-style: none;
   justify-content: space-between;
   height: 100%;
+}
+
+header nav a {
+  text-decoration: none;
 }
 
 header nav ul li {
@@ -40,6 +45,8 @@ header nav ul li {
   height: 100%;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: var(--light-color);
 }
 
 header nav ul li:hover {
