@@ -139,3 +139,42 @@
   width: 600px;
   margin: 0 auto;
 }
+
+/* MEDIA */
+@media (max-width: 800px) {
+  .index {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .index h1 {
+    font-size: 3rem;
+  }
+
+  .imageContainer {
+    width: 250px;
+    margin: 1rem auto;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .featuresImgContainer {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .editions {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .editionsImgContainer {
+    width: 400px;
+    margin: 0 auto;
+    grid-row: 1;
+  }
+}

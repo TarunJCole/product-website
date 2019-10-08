@@ -60,7 +60,7 @@ header nav ul li:hover {
     display: block;
     height: auto;
     padding: 1rem;
-    position: auto;
+    position: static;
   }
 
   header nav h2 {
