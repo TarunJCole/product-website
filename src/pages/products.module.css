@@ -62,3 +62,11 @@
 .card div a:hover {
   background: var(--primary-color);
 }
+
+/* MEDIA */
+@media (max-width: 800px) {
+  .products {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
