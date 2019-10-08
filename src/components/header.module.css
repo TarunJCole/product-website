@@ -53,3 +53,22 @@ header nav ul li:hover {
   color: var(--primary-color);
   border-color: var(--primary-color);
 }
+
+/* MEDIA */
+@media (max-width: 800px) {
+  header nav {
+    display: block;
+    height: auto;
+    padding: 1rem;
+    position: auto;
+  }
+
+  header nav h2 {
+    margin: 0.5rem 0;
+  }
+
+  header nav div {
+    height: auto;
+    margin: 0 auto;
+  }
+}
