@@ -163,7 +163,7 @@
   }
 
   .featuresImgContainer {
-    width: 400px;
+    width: 350px;
     margin: 0 auto;
   }
 
@@ -173,7 +173,7 @@
   }
 
   .editionsImgContainer {
-    width: 400px;
+    width: 350px;
     margin: 0 auto;
     grid-row: 1;
   }

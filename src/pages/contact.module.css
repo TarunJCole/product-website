@@ -50,3 +50,16 @@
 .contactForm input:last-child:hover {
   background: var(--primary-color);
 }
+
+/* MEDIA */
+@media (max-width: 800px) {
+  .contactForm {
+    max-width: 100vw;
+    padding: 1rem;
+  }
+
+  .contactForm input:last-child {
+    width: 150px;
+    align-self: center;
+  }
+}
